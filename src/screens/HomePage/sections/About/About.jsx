@@ -19,7 +19,7 @@ export const About = () => {
             </div>
 
             <p
-              className=" w-[560px] font-normal text-[22px] tracking-[0.50px] leading-[34px]"
+              className=" w-[490px] font-normal text-[20px] tracking-[0.50px] leading-[32px]"
               style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textBlack }}
             >
               お庭や家庭菜園で育った
@@ -37,7 +37,7 @@ export const About = () => {
           </div>
 
           <img
-            className="w-[557px] h-[577px]"
+            className="w-[490px] h-[510px]"
             src={AboutImage}
           />
         </div>

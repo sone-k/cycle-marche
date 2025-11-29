@@ -26,7 +26,7 @@ export const Mission = () => {
         <div
           className="text-center -my-12"
         >
-          <img src={MissionImage} className="w-[1225px] h-[689px]" />
+          <img src={MissionImage} className="w-full max-w-[1100px] h-auto mx-auto" />
 
         </div>
       </div>

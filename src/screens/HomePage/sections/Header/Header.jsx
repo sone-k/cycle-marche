@@ -6,7 +6,7 @@ const NavLink = ({ children, href }) => {
     e.preventDefault();
     const target = document.querySelector(href);
     if (target) {
-      const headerOffset = 180; // 140px header + 40px extra spacing
+      const headerOffset = 155; // 120px header + 35px extra spacing
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -21,7 +21,7 @@ const NavLink = ({ children, href }) => {
     <a
       href={href}
       onClick={handleClick}
-      className="relative w-fit font-normal text-2xl leading-[normal] whitespace-nowrap cursor-pointer hover:opacity-70 transition-opacity"
+      className="relative w-fit font-normal text-xl leading-[normal] whitespace-nowrap cursor-pointer hover:opacity-70 transition-opacity"
       style={{
         fontFamily: TYPOGRAPHY.fontFamily,
         color: COLORS.textDark,
@@ -35,9 +35,9 @@ const NavLink = ({ children, href }) => {
 
 export const Header = () => {
   return (
-    <div className="w-full fixed top-0 left-0 z-50" style={{ backgroundColor: COLORS.backgroundWhite, height: '140px' }}>
+    <div className="w-full fixed top-0 left-0 z-50" style={{ backgroundColor: COLORS.backgroundWhite, height: '100px' }}>
       <div className="w-full h-full flex items-center justify-between px-4" style={{ maxWidth: SPACING.maxWidth, margin: '0 auto' }}>
-        <img src={LogoImage} className="h-[60px] w-auto" />
+        <img src={LogoImage} className="h-[52px] w-auto" />
 
         <div className="flex items-center gap-[51px]">
           <NavLink href="#about">概要</NavLink>

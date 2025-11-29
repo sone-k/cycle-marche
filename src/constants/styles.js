@@ -42,10 +42,10 @@ export const SPACING = {
   gapLarge: '145px',
 
   // Common widths
-  maxWidth: '1240px',
-  containerWidth: '1240px', // Legacy, use maxWidth instead
-  headingWidth: '440px',
-  heroWidth: '1424px',
+  maxWidth: '1100px',
+  containerWidth: '1100px', // Legacy, use maxWidth instead
+  headingWidth: '400px',
+  heroWidth: '1300px',
 };
 
 // Typography
@@ -54,14 +54,14 @@ export const TYPOGRAPHY = {
 
   // Font sizes
   labelSmall: '14px',
-  textBase: '20px',
-  textMd: '22px',
-  textLg: '24px',
-  textXl: '26px',
-  textXxl: '28px',
-  headingMd: '40px',
-  headingLg: '48px',
-  headingXl: '52px',
+  textBase: '18px',
+  textMd: '20px',
+  textLg: '22px',
+  textXl: '24px',
+  textXxl: '26px',
+  headingMd: '36px',
+  headingLg: '44px',
+  headingXl: '48px',
 
   // Letter spacing
   letterSpacingNormal: '0.50px',

@@ -29,12 +29,12 @@ export const Join = () => {
           </div>
 
           <img
-            className="w-[1225px]"
+            className="w-[1100px]"
             src={JoinImage}
           />
 
           <div
-            className="flex justify-between px-6 font-medium text-2xl tracking-[0.50px] leading-[normal]"
+            className="flex justify-between font-medium text-2xl tracking-[0.50px] leading-[normal]"
             style={{ color: COLORS.textBlack }}
           >
 

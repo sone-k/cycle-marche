@@ -57,10 +57,10 @@ export const StampCard = () => {
             </div>
           </div>
 
-          <div className="flex mt-20 items-start">
-            <div className="flex flex-col justify-start">
+          <div className="flex mt-20 items-start gap-8">
+            <div className="flex flex-col justify-start flex-1">
               <div
-                className="font-normal text-[28px] tracking-[4.50px] leading-[48px] mr-20"
+                className="font-normal text-[24px] tracking-[4.50px] leading-[42px]"
                 style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textDark }}
               >
                 入場料をお支払いいただいた方にお配りする「参加特典カード」。<br />出展者のかごの野菜や果物を特典カードと交換いただけます。
@@ -68,29 +68,29 @@ export const StampCard = () => {
               </div>
               <div className="m-auto mt-16">
                 <Button
-                  style={{ fontSize: '24px' }}
+                  style={{ fontSize: '22px' }}
                   btRed={true}
                   text="参加特典カードについて知る"
                 />
               </div>
             </div>
 
-            <div className="relative w-[500px] h-[528px]" style={{ borderRadius: BORDER_RADIUS.large }}>
+            <div className="relative w-[480px]" style={{ borderRadius: BORDER_RADIUS.large }}>
               <img
-                className="w-[539px] h-[326px] cursor-pointer hover:opacity-80 transition-opacity"
+                className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity"
                 src={CardImage}
                 alt="Card"
                 onClick={() => openModal(CardImage)}
               />
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-3 mt-4">
                 <img
-                  className="w-[260px] h-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-[230px] h-auto cursor-pointer hover:opacity-80 transition-opacity"
                   src={Card1Image}
                   alt="Card 1"
                   onClick={() => openModal(Card1Image)}
                 />
                 <img
-                  className="w-[260px] h-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-[230px] h-auto cursor-pointer hover:opacity-80 transition-opacity"
                   src={Card2Image}
                   alt="Card 2"
                   onClick={() => openModal(Card2Image)}

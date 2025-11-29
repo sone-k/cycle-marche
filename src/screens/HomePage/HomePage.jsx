@@ -16,7 +16,7 @@ import { Footer } from "./sections/Footer/Footer";
 
 const HeroBanner = () => (
   <div className="w-full flex justify-center px-4" >
-    <img src={HeroImage} className="w-full" style={{ maxWidth: '1700px', borderRadius: BORDER_RADIUS.medium }} />
+    <img src={HeroImage} className="w-full" style={{ maxWidth: '1300px', borderRadius: BORDER_RADIUS.medium }} />
   </div>
 );
 
@@ -26,7 +26,7 @@ export const HomePage = () => {
       className="overflow-hidden w-full flex flex-col"
       style={{
         backgroundColor: COLORS.background,
-        paddingTop: '140px',
+        paddingTop: '100px',
         fontFamily: TYPOGRAPHY.fontFamily
       }}
     >

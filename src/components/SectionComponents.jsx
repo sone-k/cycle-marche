@@ -11,7 +11,7 @@ export const SectionLabel = ({ children }) => (
 
 export const SectionHeading = ({ children }) => (
   <div
-    className="flex items-center justify-center font-bold text-[52px] text-center tracking-[0.50px] leading-[60px]"
+    className="flex items-center justify-center font-bold text-[48px] text-center tracking-[0.50px] leading-[60px]"
     style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textDark }}
   >
     {children}
@@ -20,7 +20,7 @@ export const SectionHeading = ({ children }) => (
 
 export const SectionHeadingLeft = ({ children }) => (
   <div
-    className="font-bold text-[52px] text-left tracking-[0.50px] leading-[60px]"
+    className="font-bold text-[48px] text-left tracking-[0.50px] leading-[60px]"
     style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textDark }}
   >
     {children}
