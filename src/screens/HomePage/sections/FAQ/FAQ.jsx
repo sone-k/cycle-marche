@@ -45,7 +45,8 @@ export const FAQ = () => {
 
         <div className="w-full flex flex-col gap-[19px]">
           <FAQItem
-            question="見た目がよくない果物でも参加できますか？"
+            question="見た目がよくない果物でも出店できますか？"
+            answer={'もちろんご参加いただけます。形が不ぞろいだったり傷があっても、味や安全に問題なければ歓迎です。家庭でとれた「不格好だけど美味しい果物」は、サイクルマルシェにぴったりです。'}
             defaultExpanded={false}
           />
           <FAQItem

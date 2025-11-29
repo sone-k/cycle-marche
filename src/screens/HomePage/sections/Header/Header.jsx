@@ -34,10 +34,22 @@ const NavLink = ({ children, href }) => {
 };
 
 export const Header = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="w-full fixed top-0 left-0 z-50" style={{ backgroundColor: COLORS.backgroundWhite, height: '100px' }}>
       <div className="w-full h-full flex items-center justify-between px-4" style={{ maxWidth: SPACING.maxWidth, margin: '0 auto' }}>
-        <img src={LogoImage} className="h-[52px] w-auto" />
+        <img
+          src={LogoImage}
+          className="h-[52px] w-auto cursor-pointer hover:opacity-80 transition-opacity"
+          onClick={scrollToTop}
+          alt="サイクルマルシェ"
+        />
 
         <div className="flex items-center gap-[51px]">
           <NavLink href="#about">概要</NavLink>

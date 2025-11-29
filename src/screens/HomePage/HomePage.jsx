@@ -48,7 +48,7 @@ export const HomePage = () => {
       <Reward />
 
       <FAQ />
-      <Access />
+      {/* <Access /> */}
       <Footer />
     </div>
   );

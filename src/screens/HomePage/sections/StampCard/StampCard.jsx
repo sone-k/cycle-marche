@@ -66,7 +66,7 @@ export const StampCard = () => {
                 入場料をお支払いいただいた方にお配りする「参加特典カード」。<br />出展者のかごの野菜や果物を特典カードと交換いただけます。
 
               </div>
-              <div className="m-auto mt-16">
+              <div className="m-auto mt-20">
                 <Button
                   style={{ fontSize: '22px' }}
                   btRed={true}
