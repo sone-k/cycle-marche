@@ -13,8 +13,9 @@ export const COLORS = {
   backgroundGray: '#d9d9d9',
 
   // Button colors
-  buttonOrange: '#e79c34',
-  buttonCoral: '#e86062',
+  buttonCoral: '#E79D34',
+  buttonWater: '#34ACE7',
+  buttonRed: '#E86063',
 };
 
 // Border radius values
@@ -32,7 +33,8 @@ export const SPACING = {
   containerMarginLeftLg: '103px',
 
   // Section spacing
-  sectionMargin: '120px', // Standard margin between sections
+  sectionMarginSmall: '60px',
+  sectionMargin: '100px', // Standard margin between sections
   sectionMarginLarge: '160px', // Large margin between sections
 
   // Section gaps
@@ -40,14 +42,15 @@ export const SPACING = {
   gapLarge: '145px',
 
   // Common widths
-  maxWidth: '1200px',
+  maxWidth: '1240px',
   containerWidth: '1240px', // Legacy, use maxWidth instead
   headingWidth: '440px',
+  heroWidth: '1424px',
 };
 
 // Typography
 export const TYPOGRAPHY = {
-  fontFamily: "'Roboto',Helvetica",
+  fontFamily: "'Noto Sans JP', sans-serif",
 
   // Font sizes
   labelSmall: '14px',
@@ -73,7 +76,7 @@ export const TYPOGRAPHY = {
 
 // Common component styles
 export const COMPONENT_STYLES = {
-  sectionLabel: `[font-family:'Roboto',Helvetica] font-medium text-[#04a89b] text-sm tracking-[0.50px] leading-[normal]`,
-  sectionHeading: `[font-family:'Roboto',Helvetica] font-bold text-[#333333] text-[52px] tracking-[0.50px] leading-[normal]`,
+  sectionLabel: `[font-family:'Noto_Sans_JP',sans-serif] font-medium text-[#04a89b] text-sm tracking-[0.50px] leading-[normal]`,
+  sectionHeading: `[font-family:'Noto_Sans_JP',sans-serif] font-bold text-[#333333] text-[52px] tracking-[0.50px] leading-[normal]`,
   cardBackground: `bg-white rounded-[59px]`,
 };

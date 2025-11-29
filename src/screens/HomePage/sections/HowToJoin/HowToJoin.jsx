@@ -3,7 +3,8 @@ import { SectionLabel, SectionHeading } from "../../../../components/SectionComp
 import { Button } from "../../../../components/Button";
 import "./HowToJoin.css";
 
-const ParticipantCard = ({ title, description, bgColor, buttonText }) => (
+
+const ParticipantCard = ({ title, description, bgColor, buttonText, btCoral, btWater }) => (
   <div className="participant-card">
     <div
       className="card-background"
@@ -11,20 +12,21 @@ const ParticipantCard = ({ title, description, bgColor, buttonText }) => (
     />
     <div
       className="card-title"
-      style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textDark }}
+      style={{ color: COLORS.textDark }}
     >
       {title}
     </div>
     <div
       className="card-description"
-      style={{ fontFamily: TYPOGRAPHY.fontFamily, color: COLORS.textDark }}
+      style={{ color: COLORS.textDark }}
     >
       {description}
     </div>
     <Button
       className="card-button"
       divClassName="card-button-text"
-      rectangleClassName={`!bg-[${COLORS.buttonOrange}]`}
+      btCoral={btCoral}
+      btWater={btWater}
       text={buttonText}
     />
   </div>
@@ -47,12 +49,14 @@ export const HowToJoin = () => {
             description="近くのサイクルマルシェにお庭で採れた果物をお持ち寄りください！"
             bgColor={COLORS.backgroundPeach}
             buttonText="近くの出店会場を探す"
+            btCoral={true}
           />
           <ParticipantCard
             title="来場者の方"
             description="受付で入場料をお支払いいただき、チケットをお渡しします。生産者の方が愛情込めて育てた果物を自由にお持ちいただけます！"
             bgColor={COLORS.backgroundWhite}
             buttonText="近くの出店会場を探す"
+            btWater={true}
           />
         </div>
       </div>

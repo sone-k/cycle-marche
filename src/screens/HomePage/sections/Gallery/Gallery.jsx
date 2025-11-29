@@ -10,7 +10,7 @@ export const Gallery = () => {
           <SectionHeading>ギャラリー</SectionHeading>
         </div>
 
-        <div className="absolute top-[167px] left-0 right-0 flex gap-4 justify-center flex-wrap">
+        <div className="absolute top-[167px] left-0 right-0 flex gap-4 justify-between flex-wrap">
           <img
             className="w-[370px] h-[388px] aspect-[0.95] object-cover"
             alt="Element"

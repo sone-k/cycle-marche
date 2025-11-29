@@ -10,9 +10,8 @@ const NewsItem = ({ date, title, isUnderline = false }) => (
       {date}
     </div>
     <div
-      className={`self-start h-[35.01px] w-full font-normal text-[26px] tracking-[0.50px] leading-[34px] whitespace-nowrap ${
-        isUnderline ? "underline" : ""
-      }`}
+      className={`self-start h-[35.01px] w-full font-normal text-[26px] tracking-[0.50px] leading-[34px] whitespace-nowrap ${isUnderline ? "underline cursor-pointer" : ""
+        }`}
       style={{ fontFamily: TYPOGRAPHY.fontFamily, color: date === "2025.11.01" ? COLORS.textDark : COLORS.textBlack }}
     >
       {title}
@@ -30,13 +29,13 @@ const NewsDivider = () => (
 
 export const News = () => {
   const newsItems = [
-    { date: "2025.11.30", title: "お知らせお知らせお知らせ", underline: true },
-    { date: "2025.11.30", title: "出店者募集のお知らせ", underline: true },
+    { date: "2025.11.30", title: "2026年1月10日　青葉区民文化センター「フィリアホール」前広場で開催決定", underline: true },
+    { date: "2025.11.30", title: "2025年12月30日　三鷹市立第三小学校で開催決定", underline: true },
     { date: "2025.11.01", title: "WEBサイトをオープンしました！", underline: false },
   ];
 
   return (
-    <div className="w-full flex justify-center px-4" style={{ marginTop: SPACING.sectionMargin }}>
+    <div className="w-full flex justify-center px-4" style={{ marginTop: SPACING.sectionMarginLarge }}>
       <div className="relative h-[603px] w-full" style={{ maxWidth: SPACING.maxWidth }}>
         <div
           className="absolute top-0 left-0 right-0 h-[603px]"
